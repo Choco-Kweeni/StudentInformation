@@ -168,6 +168,9 @@
             this.ContactNumber});
             this.gvStudents.GridControl = this.gcStudents;
             this.gvStudents.Name = "gvStudents";
+            this.gvStudents.OptionsBehavior.AllowFixedGroups = DevExpress.Utils.DefaultBoolean.True;
+            this.gvStudents.OptionsBehavior.Editable = false;
+            this.gvStudents.OptionsBehavior.ReadOnly = true;
             this.gvStudents.OptionsEditForm.PopupEditFormWidth = 914;
             this.gvStudents.OptionsView.ShowGroupPanel = false;
             this.gvStudents.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gvStudents_RowClick);
@@ -191,6 +194,7 @@
             this.MiddleName.MinWidth = 29;
             this.MiddleName.Name = "MiddleName";
             this.MiddleName.OptionsColumn.AllowEdit = false;
+            this.MiddleName.OptionsColumn.AllowFocus = false;
             this.MiddleName.Visible = true;
             this.MiddleName.VisibleIndex = 1;
             this.MiddleName.Width = 107;

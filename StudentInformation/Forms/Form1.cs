@@ -107,7 +107,8 @@ namespace StudentInformation
 
             if (selectedRows.Length > 0)
             {
-                int index = selectedRows[0]; // Get the first selected row index
+                // Get the first selected row index
+                int index = selectedRows[0]; 
                 students.RemoveAt(index);
                 LoadDataGrid();
                 ClearTextBoxes();
